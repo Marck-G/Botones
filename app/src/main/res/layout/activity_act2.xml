@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Act2">
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/act2_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        />
+    <LinearLayout
+        android:id="@+id/entrada"
+        android:layout_below="@id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dni"
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="8"
+            android:hint="Número DNI"
+            android:layout_weight="3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" - "
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/dni_char"
+            android:inputType="text"
+            android:hint="Letra"
+            android:maxLength="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <Button
+        android:onClick="validarDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entrada"
+        android:layout_marginTop="20dp"
+        android:text="Validar DNI"
+        />
+
+</RelativeLayout>
