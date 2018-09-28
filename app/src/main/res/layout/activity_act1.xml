@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layout_marginHorizontal="20dp"
+    tools:context=".Act1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="Introduce PRIMER valor:"/>
+    <EditText
+        android:id="@+id/num1"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="Intoduce SEGUNDO valor:"/>
+    <EditText
+        android:id="@+id/num2"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/mas"
+            android:layout_width="wrap_content"
+            android:text="+"
+            android:layout_height="wrap_content"
+            android:onClick="action"/>
+        <Button
+            android:id="@+id/menos"
+            android:layout_width="wrap_content"
+            android:text="-"
+            android:layout_height="wrap_content"
+            android:onClick="action"/>
+        <Button
+            android:id="@+id/produc"
+            android:layout_width="wrap_content"
+            android:text="*"
+            android:layout_height="wrap_content"
+            android:onClick="action"/>
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:text="/"
+            android:layout_height="wrap_content"
+            android:onClick="action"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/resultado"
+        android:text="Resultado: "
+        android:textSize="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

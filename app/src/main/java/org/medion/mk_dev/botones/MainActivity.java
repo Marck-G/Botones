@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent( this , Act2.class );
         startActivity( intent );
     }
+
+    public void act1(View view) {
+        Intent intent = new Intent( this , Act1.class );
+        startActivity( intent );
+    }
 }
