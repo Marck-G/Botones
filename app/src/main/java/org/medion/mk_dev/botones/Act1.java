@@ -23,28 +23,32 @@ public class Act1 extends AppCompatActivity {
     }
 
     public void action(View view) {
-        int num1 = Integer.parseInt( tNum1.getText().toString() );
-        int num2 = Integer.parseInt( tNum2.getText().toString() );
-        int res = 0;
-        switch ( view.getId() ){
-            case R.id.mas:
-                res = num1 + num2;
-                break;
-            case R.id.menos:
-                res = ( int ) Math.abs( num1 - num2 );
-                break;
-            case R.id.produc:
-                res = num1 * num2;
-                break;
-            case R.id.div:
-                try {
-                    res = num1 / num2;
-                } catch ( ArithmeticException e){
-                    Toast.makeText( getApplicationContext(), "División entre 0!", Toast.LENGTH_LONG).show();
-                }
-                break;
+        try {
+            int num1 = Integer.parseInt(tNum1.getText().toString());
+            int num2 = Integer.parseInt(tNum2.getText().toString());
+            int res = 0;
+            switch (view.getId()) {
+                case R.id.mas:
+                    res = num1 + num2;
+                    break;
+                case R.id.menos:
+                    res = (int) Math.abs(num1 - num2);
+                    break;
+                case R.id.produc:
+                    res = num1 * num2;
+                    break;
+                case R.id.div:
+                    try {
+                        res = num1 / num2;
+                    } catch (ArithmeticException e) {
+                        Toast.makeText(getApplicationContext(), "División entre 0!", Toast.LENGTH_LONG).show();
+                    }
+                    break;
+            }
+            resul.setText("Resultado: " + res);
+        } catch ( NumberFormatException e ){
+            Toast.makeText( getApplicationContext(), "Introduce un número en cada campo!", Toast.LENGTH_LONG ).show();
         }
-        resul.setText("Resultado: " + res );
 
     }
 }
