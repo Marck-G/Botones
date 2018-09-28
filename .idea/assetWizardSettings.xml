@@ -29,6 +29,17 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="foregroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="trimmed" value="true" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="foregroundText">
                                         <value>
                                           <PersistentState>
@@ -59,7 +70,6 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="009688" />
-                                      <entry key="foregroundAssetType" value="TEXT" />
                                       <entry key="previewDensity" value="XXXHIGH" />
                                     </map>
                                   </option>
@@ -69,27 +79,13 @@
                             <entry key="launcherLegacy">
                               <value>
                                 <PersistentState>
-                                  <option name="children">
-                                    <map>
-                                      <entry key="image">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="trimmed" value="true" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
-                                    </map>
-                                  </option>
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Descargas/if_bing_1220382.png" />
-                                      <entry key="outputName" value="ic_bing" />
+                                      <entry key="cropped" value="true" />
+                                      <entry key="iconShape" value="VRECT" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Descargas/home" />
+                                      <entry key="outputName" value="ic_home" />
                                     </map>
                                   </option>
                                 </PersistentState>
